@@ -227,11 +227,11 @@ function App() {
 
               <a
                 className="project-link"
-                href="https://github.com/Ridex123-wire"
+                href="https://github.com/Ridex123-wire/budgetwise"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Explore my GitHub profile ↗
+                View BudgetWise Source Code ↗
               </a>
             </div>
 
