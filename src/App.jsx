@@ -37,12 +37,15 @@ function App() {
               Developer.
             </h1>
 
-            <p className="hero-description">
-              I build responsive, user-friendly digital
-              experiences with modern web technologies.
-              I'm also exploring mobile app development
-              and building practical projects as I grow.
-            </p>
+           
+<p className="hero-description">
+  I create responsive, user-friendly web experiences
+  and build practical applications that solve real
+  problems. I'm growing my skills in React, JavaScript,
+  React Native, and Firebase while building projects
+  and looking for opportunities to contribute to a team.
+</p>
+
 
             <div className="hero-actions">
               <a href="#projects" className="primary-button">

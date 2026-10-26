@@ -678,3 +678,218 @@ html {
 .social-links a:hover {
   color: #ffffff;
 }
+
+
+/* =====================================
+   DEVORA HERO — VISUAL UPGRADE
+===================================== */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  gap: clamp(35px, 5vw, 75px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  width: fit-content;
+  max-width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #a78bfa30;
+  border-radius: 999px;
+  background: #a78bfa0d;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  line-height: 1.5;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-size: clamp(44px, 6vw, 78px);
+  line-height: 1.04;
+  letter-spacing: -3.5px;
+}
+
+.hero h1 span {
+  background: linear-gradient(100deg, #c4b5fd, #8b5cf6 65%, #e9d5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  max-width: 490px;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.hero-actions {
+  gap: 13px;
+}
+
+.primary-button,
+.secondary-button,
+.nav-button {
+  min-height: 46px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-button {
+  box-shadow: 0 6px 24px #a78bfa20;
+}
+
+.secondary-button {
+  color: #e8e4f7;
+}
+
+.hero-visual {
+  perspective: 1000px;
+}
+
+.glow {
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, #8b5cf6 0%, #6d28d9 40%, transparent 72%);
+  opacity: 0.38;
+}
+
+.profile-card {
+  border-color: #c4b5fd35;
+  background: linear-gradient(
+    145deg,
+    #241b38 0%,
+    #151321 58%,
+    #101019 100%
+  );
+  box-shadow:
+    0 30px 80px #00000055,
+    0 0 35px #8b5cf610,
+    inset 0 1px 0 #ffffff0c;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  border-color: #a78bfa80;
+  box-shadow:
+    0 35px 90px #00000065,
+    0 0 40px #8b5cf620;
+}
+
+.avatar {
+  border: 3px solid #a78bfa;
+  box-shadow: 0 0 0 7px #a78bfa15, 0 12px 35px #00000050;
+}
+
+.floating-badge {
+  border-color: #a78bfa45;
+  background: #191525ed;
+  backdrop-filter: blur(12px);
+}
+
+.badge-one {
+  left: -18px;
+}
+
+.badge-two {
+  right: -15px;
+}
+
+/* Clear keyboard focus for accessible navigation */
+a:focus-visible {
+  outline: 2px solid #c4b5fd;
+  outline-offset: 5px;
+}
+
+/* Tablet and mobile refinement */
+@media (max-width: 850px) {
+  .hero {
+    gap: 30px;
+  }
+
+  .hero-content {
+    max-width: 680px;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .badge-one {
+    left: max(0px, calc(50% - 205px));
+  }
+
+  .badge-two {
+    right: max(0px, calc(50% - 205px));
+  }
+}
+
+@media (max-width: 560px) {
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+    gap: 8px;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -2.5px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+  }
+
+  .hero-actions a {
+    flex: 1 1 145px;
+    padding: 13px 12px;
+    font-size: 12px;
+  }
+
+  .hero-stats {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .hero-stats h3 {
+    font-size: 18px;
+  }
+
+  .hero-stats p {
+    font-size: 10px;
+  }
+
+  .hero-visual {
+    min-height: 390px;
+  }
+
+  .profile-card {
+    width: min(100% - 24px, 340px);
+  }
+
+  .avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .badge-one {
+    top: 35px;
+    left: 0;
+  }
+
+  .badge-two {
+    right: 0;
+    bottom: 35px;
+  }
+}
+
